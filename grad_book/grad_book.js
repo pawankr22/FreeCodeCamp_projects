@@ -50,3 +50,7 @@ function studentMsg(totalScores, studentScore) {
         `Class average: ${average} your grade: ${grade}. You failed the course`;
     }
 }
+
+
+
+
