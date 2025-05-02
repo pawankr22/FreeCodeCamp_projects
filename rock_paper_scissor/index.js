@@ -41,8 +41,33 @@ function showResults(userOption) {
     computerScoreSpanElement.innerText = computerScore;
     playerScoreSpanElement.innerText = playerScore;
 
+    if (playerScore === 3) {
+        winnerMsgElement.innerText = "Player wins the game!";
+        optionsContainer.style.display = "none";
+        resetGameBtn.style.display = "block";
+    } else if (computerScore === 3) {
+        winnerMsgElement.innerText = "Computer wins the game!";
+        optionsContainer.style.display = "none";
+        resetGameBtn.style.display = "block";
+    }
+};
+
+function resetGame() {
+    playerScore = 0;
+    computerScore = 0;
+
+    playerScoreSpanElement.innerText = playerScore;
+    computerScoreSpanElement.innerText = computerScore;
+
+    resetGameBtn.style.display = "none";
+    optionsContainer.style.display = "block";
+
+    winnerMsgElement.innerText = "";
+    roundResultsMsg.innerText = "";
 
 };
+
+resetGameBtn.addEventListener("click", resetGame);
 
 const rockBtn = document.getElementById("rock-btn");
 const paperBtn = document.getElementById("paper-btn");
