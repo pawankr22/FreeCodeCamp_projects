@@ -20,12 +20,12 @@ function getRoundResults(userOption) {
 
     if (hasPlayerWonTheRound(userOption, computerResult)) {
         playerScore++;
-        return `Player wins! ${userOption} beats ${computerResult}`;
+        return `Tu jeet gaya! ${userOption} beats ${computerResult}`;
     } else if (computerResult === userOption) {
-        return `It's a tie! Both chose ${userOption}`;
+        return `draw ho gya bro: ${userOption}`;
     } else {
         computerScore++;
-        return `Computer wins! ${computerResult} beats ${userOption}`;
+        return `haar gaya noobdaa! ${computerResult} beats ${userOption}`;
     }
 }
 
@@ -42,11 +42,11 @@ function showResults(userOption) {
     playerScoreSpanElement.innerText = playerScore;
 
     if (playerScore === 3) {
-        winnerMsgElement.innerText = "Player wins the game!";
+        winnerMsgElement.innerText = "Are tu jeet kaise gaya! 😱😱";
         optionsContainer.style.display = "none";
         resetGameBtn.style.display = "block";
     } else if (computerScore === 3) {
-        winnerMsgElement.innerText = "Computer wins the game!";
+        winnerMsgElement.innerText = "Noobda ko computer ne hara diya! 🤣🤣";
         optionsContainer.style.display = "none";
         resetGameBtn.style.display = "block";
     }
