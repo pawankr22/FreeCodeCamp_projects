@@ -7,10 +7,10 @@
 }
 
 :root {
-  --very-dark-blue: #0a0a23;
-  --white: #ffffff;
-  --yellow: #f1be32;
-  --golden-yellow: #feac32;
+  --very-dark-blue: #fdfdfd;
+  --violet: #783ace;
+  --violet: #783ace;
+  --golden-yellow: #783ace;
 }
 
 body {
@@ -29,22 +29,27 @@ h1 {
   margin: 10px;
   color: var(--very-dark-blue);
   background-color: var(--golden-yellow);
-  background-image: linear-gradient(#fecc4c, #ffac33);
+  background-image: linear-gradient(#783ace, #783ace);
   border-color: var(--golden-yellow);
   border-width: 3px;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .btn:hover {
-  background-image: linear-gradient(#ffcc4c, #f89808);
+  background-image: linear-gradient(#a34cff, #6408f8);
 }
 
 .rules-container {
   padding: 10px 0;
   margin: auto;
   border-radius: 15px;
-  border: 5px solid var(--yellow);
-  background-color: var(--white);
+  border: 5px solid var(--violet);
+  background-color: var(--violet);
   color: var(--very-dark-blue);
+  cursor: pointer;
 }
 
 .rules-container ul {
