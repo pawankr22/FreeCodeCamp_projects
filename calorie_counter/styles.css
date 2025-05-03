@@ -1,9 +1,8 @@
 :root {
-    --light-grey: #f5f6f7;
+    --light-pink: #b56a6a;
     --dark-blue: #0a0a23;
-    --fcc-blue: #1b1b32;
-    --light-yellow: #fecc4c;
-    --dark-yellow: #feac32;
+    --fcc-blue: #5c5cd7;
+    --light-purple: #4caefe;
     --light-pink: #ffadad;
     --dark-red: #850000;
     --light-green: #acd157;
@@ -13,7 +12,7 @@ body {
     font-family: "Lato", Helvetica, Arial, sans-serif;
     font-size: 18px;
     background-color: var(--fcc-blue);
-    color: var(--light-grey);
+    color: var(--light-pink);
 }
 
 h1 {
@@ -44,8 +43,9 @@ legend {
 button {
     cursor: pointer;
     text-decoration: none;
-    background-color: var(--light-yellow);
-    border: 2px solid var(--dark-yellow);
+    background-color: var(--light-purple);
+    border: 2px solid var(--light-purple);
+    border-radius: 4px;
 }
 
 button,
