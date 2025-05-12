@@ -158,7 +158,28 @@ const renderSongs = (array) => {
   playlistSongs.innerHTML = songsHTML;
 };
 
-playButton.addEventListner("click")
+const setPlayButtonAccessibleText = () => {
+  const song = userData?.currentSong || userData?.songs[0];
+
+}
+
+const getCurrentSongIndex = () => userData?.songs.indexOf(userData?.currentSong);
+
+playButton.addEventListner("click", () => {
+  if (userData?.currentSong === null) {
+    playSong(userData?.songs[0].id);
+  } else {
+    playSong(userData?.currentSong.id);
+  }
+});
+
+pauseButton.addEventListener("click", pauseSong);
+
+nextButton.addEventListener("click", playNextSong)
+
+previousButton.addEventListener("click", playPreviousSong);
+
+
 
 const sortSongs = () => {
   userData?.songs.sort((a, b) => {
